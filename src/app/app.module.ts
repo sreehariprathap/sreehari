@@ -11,6 +11,11 @@ import { ExperienceComponent } from './portfolio/experience/experience.component
 import { EducationComponent } from './portfolio/education/education.component';
 import { ContactComponent } from './portfolio/contact/contact.component';
 import { PortfolioDarkComponent } from './portfolio-dark/portfolio-dark.component';
+import { WorksDarkComponent } from './portfolio-dark/works-dark/works-dark.component';
+import { ExperinceDarkComponent } from './portfolio-dark/experince-dark/experince-dark.component';
+import { EducationDarkComponent } from './portfolio-dark/education-dark/education-dark.component';
+import { ContactDarkComponent } from './portfolio-dark/contact-dark/contact-dark.component';
+// import { DarkmodeToggleComponent } from './darkmode-toggle/darkmode-toggle.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +26,11 @@ import { PortfolioDarkComponent } from './portfolio-dark/portfolio-dark.componen
     EducationComponent,
     ContactComponent,
     PortfolioDarkComponent,
+    WorksDarkComponent,
+    ExperinceDarkComponent,
+    EducationDarkComponent,
+    ContactDarkComponent,
+    // DarkmodeToggleComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,135 @@
+// @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@100;400&family=Roboto+Serif:wght@100;300;400;500;800&family=Shizuru&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@100;400&family=Roboto+Serif:wght@100;300;400;500;800&family=Shizuru&display=swap");
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Roboto Serif', sans-serif;
+// font-family: 'Shizuru', cursive;
+// font-family: 'Roboto Mono', monospace;
+.logo {
+  width: 7rem;
+}
+.mypic {
+  width: 25rem;
+  border-radius: 50%;
+}
+.main {
+  background: #0b090a;
+}
+* {
+  //   font-family: "Roboto Mono", monospace;
+  //   font-family: "Roboto Serif", sans-serif;
+}
+.heading {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+}
+
+html,
+body {
+  background: #0b090a;
+  height: 100%;
+  font-weight: 800;
+}
+
+// body {
+//   // background: white;
+//   //   font-family: "Roboto Mono", monospace;
+// }
+.container-fluid {
+  background-color: #0b090a;
+  color: #dfe6e9;
+  p {
+    color: #dfe6e9;
+  }
+}
+
+svg {
+  display: block;
+  font-size: 6.5em;
+
+  width: 580px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.text-copy {
+  fill: none;
+  stroke: white;
+  stroke-dasharray: 9%; //6%
+  stroke-width: 4px;
+  stroke-dashoffset: 0%;
+  animation: stroke-offset 9.5s infinite linear;
+}
+
+.text-copy:nth-child(1) {
+  stroke: #ff006e;
+  animation-delay: -1;
+}
+
+.text-copy:nth-child(2) {
+  stroke: #bdb2ff;
+  animation-delay: -2s;
+}
+
+.text-copy:nth-child(3) {
+  stroke: #ff618e;
+  animation-delay: -3s;
+}
+
+.text-copy:nth-child(4) {
+  stroke: #bd0034;
+  animation-delay: -4s;
+}
+
+.text-copy:nth-child(5) {
+  stroke: #4c7dbd;
+  animation-delay: -5s;
+}
+
+@keyframes stroke-offset {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+// desigingin skills
+.item {
+  padding: 0.9rem 2rem 0.5rem 2rem;
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    margin: 0 1rem 0 1rem;
+  }
+}
+.Tester {
+}
+.designer {
+}
+.developer {
+}
+.item:hover {
+  transition-delay: 0.1s;
+  transition: linear 0.3s;
+  border-radius: 60px;
+  border-radius: 60px;
+  // background: #ffffff;
+  box-shadow: 5px 5px 40px #181818, -5px -5px 40px #202020;
+
+  background: #1c1c1c;
+  // box-shadow: 20px 20px 40px #181818, -20px -20px 40px #202020;
+}
+
+.skill {
+  padding: 1rem;
+  border-radius: 1rem;
+  background: #001d3d;
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.skills {
+  max-width: 40rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
