@@ -1,1 +1,23 @@
+// fonts
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&family=Noto+Sans:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:wght@100;400&family=Roboto+Serif:wght@100;300;400;500;800&family=Shizuru&display=swap");
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Noto Sans', sans-serif;
+// font-family: 'Roboto Serif', sans-serif;
+// font-family: 'Shizuru', cursive;
+// font-family: 'Roboto Mono', monospace;
 /* You can add global styles to this file, and also import other style files */
+
+// colors 
+
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  // font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+* {
+  font-family: "Roboto Mono", monospace;
+}
