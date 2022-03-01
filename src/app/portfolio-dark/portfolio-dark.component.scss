@@ -6,15 +6,30 @@
 // font-family: 'Roboto Serif', sans-serif;
 // font-family: 'Shizuru', cursive;
 // font-family: 'Roboto Mono', monospace;
+.main {
+  background-color: #001219;
+}
+.navbar-toggler-icon {
+  stroke: #023e8a !important;
+}
 .logo {
   width: 7rem;
 }
+.myimage {
+  display: flex;
+  justify-content: center;
+}
 .mypic {
   width: 25rem;
+  height: 25rem;
   border-radius: 50%;
-}
-.main {
-  background: #0b090a;
+  border-radius: 50%; /*1*/
+  border: 3px solid transparent; /*2*/
+  background: linear-gradient(45deg, #ffffff, #006eff) border-box; /*3*/
+  // -webkit-mask: /*4*/ linear-gradient(#fff 0 0) padding-box,
+  //   linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+  mask-composite: exclude; /*5*/
 }
 * {
   //   font-family: "Roboto Mono", monospace;
@@ -23,25 +38,27 @@
 .heading {
   font-size: 3rem;
   font-family: "Dancing Script", cursive;
+  color: white;
+}
+.moon {
+  width: 1.9rem;
+  margin-right: 1rem;
+  display: none;
+}
+.dark {
+  // display: flex;
+  // align-items: center;
 }
 
 html,
 body {
-  background: #0b090a;
   height: 100%;
   font-weight: 800;
 }
 
-// body {
-//   // background: white;
-//   //   font-family: "Roboto Mono", monospace;
-// }
-.container-fluid {
-  background-color: #0b090a;
-  color: #dfe6e9;
-  p {
-    color: #dfe6e9;
-  }
+body {
+  background: white;
+  //   font-family: "Roboto Mono", monospace;
 }
 
 svg {
@@ -57,33 +74,33 @@ svg {
   fill: none;
   stroke: white;
   stroke-dasharray: 9%; //6%
-  stroke-width: 4px;
+  stroke-width: 3px;
   stroke-dashoffset: 0%;
   animation: stroke-offset 9.5s infinite linear;
 }
 
 .text-copy:nth-child(1) {
-  stroke: #ff006e;
+  stroke: #ffffff;
   animation-delay: -1;
 }
 
 .text-copy:nth-child(2) {
-  stroke: #bdb2ff;
+  stroke: #4cc9f0;
   animation-delay: -2s;
 }
 
 .text-copy:nth-child(3) {
-  stroke: #ff618e;
+  stroke: #b5179e;
   animation-delay: -3s;
 }
 
 .text-copy:nth-child(4) {
-  stroke: #bd0034;
+  // stroke: #e5e5e6;
   animation-delay: -4s;
 }
 
 .text-copy:nth-child(5) {
-  stroke: #4c7dbd;
+  stroke: #e5e5e6;
   animation-delay: -5s;
 }
 
@@ -94,8 +111,34 @@ svg {
 }
 
 // desigingin skills
+.mypower {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.abt {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    min-width: 15rem;
+    max-width: 30rem;
+    justify-self: center;
+    align-self: center;
+    color: white;
+  }
+}
 .item {
+  display: flex;
+  justify-content: flex-start;
   padding: 0.9rem 2rem 0.5rem 2rem;
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+  }
 
   img {
     width: 2rem;
@@ -103,33 +146,139 @@ svg {
     margin: 0 1rem 0 1rem;
   }
 }
-.Tester {
-}
-.designer {
-}
-.developer {
-}
+
 .item:hover {
   transition-delay: 0.1s;
   transition: linear 0.3s;
   border-radius: 60px;
-  border-radius: 60px;
   // background: #ffffff;
-  box-shadow: 5px 5px 40px #181818, -5px -5px 40px #202020;
-
-  background: #1c1c1c;
-  // box-shadow: 20px 20px 40px #181818, -20px -20px 40px #202020;
+  box-shadow: 5px 5px 20px #023047, -5px -5px 20px #023047;
 }
 
-.skill {
-  padding: 1rem;
-  border-radius: 1rem;
-  background: #001d3d;
-  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
-}
 .skills {
-  max-width: 40rem;
+  // max-width: 40rem;
+  // min-width: 20rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+  .skill {
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #f0f0f0;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #023047;
+    color: white;
+  }
+}
+.it {
+  display: flex;
+  flex-wrap: wrap;
+}
+// media query
+@media screen and (max-width: 600px) {
+  .text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 9%; //6%
+    stroke-width: 2px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 9.5s infinite linear;
+  }
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .skills {
+    flex-direction: column;
+    flex-wrap: wrap;
+    .skill {
+      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    }
+  }
+  .mypic {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+  }
+  .myimage {
+    display: flex;
+    justify-content: center;
+  }
+  svg {
+    display: block;
+    font-size: 4.5em;
+
+    width: 480px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .skills {
+    p {
+      font-size: 0.5rem;
+    }
+    // max-width: 40rem;
+    display: flex;
+    // flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // flex-wrap: wrap;
+    .it {
+      max-width: 20rem;
+      justify-content: center;
+    }
+    .skill {
+      padding: 0.7rem;
+      border-radius: 1rem;
+      background: #f0f0f0;
+      margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+      background-color: #023047;
+      color: white;
+    }
+  }
+  .abt {
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+
+    p {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      min-width: 10rem;
+      max-width: 20rem;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+  .mypower {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    // align-self: center;
+    flex-direction: column;
+
+    flex-wrap: wrap;
+  }
+  .item {
+    margin-top: 1rem;
+    box-shadow: 3px 3px 10px #023047, -3px -3px 10px #023047;
+
+    width: 16rem;
+    border-radius: 2rem;
+    p {
+      display: flex;
+    }
+  }
+  .moon {
+    width: 1.9rem;
+    margin-right: 1rem;
+    display: block;
+  }
+  .dark {
+    display: flex;
+    align-items: center;
+  }
 }

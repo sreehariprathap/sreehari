@@ -15,6 +15,8 @@ import { WorksDarkComponent } from './portfolio-dark/works-dark/works-dark.compo
 import { ExperinceDarkComponent } from './portfolio-dark/experince-dark/experince-dark.component';
 import { EducationDarkComponent } from './portfolio-dark/education-dark/education-dark.component';
 import { ContactDarkComponent } from './portfolio-dark/contact-dark/contact-dark.component';
+import { UiuxComponent } from './uiux/uiux.component';
+import { ProjectsComponent } from './projects/projects.component';
 // import { DarkmodeToggleComponent } from './darkmode-toggle/darkmode-toggle.component';
 
 @NgModule({
@@ -30,6 +32,8 @@ import { ContactDarkComponent } from './portfolio-dark/contact-dark/contact-dark
     ExperinceDarkComponent,
     EducationDarkComponent,
     ContactDarkComponent,
+    UiuxComponent,
+    ProjectsComponent,
     // DarkmodeToggleComponent,
   ],
   imports: [

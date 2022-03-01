@@ -1,5 +1,5 @@
 <!-- navbar  -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
   <div class="container-fluid">
     <a class="navbar-brand"
       ><img class="img-fluid logo" src="assets/haris world (2).png" alt=""
@@ -13,7 +13,7 @@
       aria-expanded="false"
       aria-label="Toggle navigation"
     >
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon"> </span>
     </button>
     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
       <ul class="navbar-nav">
@@ -21,19 +21,29 @@
           <a
             class="nav-link active px-3 mt-3 mx-2 text-dark"
             aria-current="page"
+            routerLink="/uiux"
+            style="cursor: pointer"
             ><h4>UI/UX Projects</h4></a
+          >
+        </li>
+
+        <li class="nav-item" routrLink="development">
+          <a
+            class="nav-link active px-3 mt-3 mx-2 text-dark"
+            aria-current="page"
+            style="cursor: pointer"
+            ><h4>development</h4></a
           >
         </li>
         <li class="nav-item">
           <a
-            class="nav-link active px-3 mt-3 mx-2 text-dark"
-            aria-current="page"
-            ><h4>Development</h4></a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active px-3 mt-3 mx-2 text-dark" routerLink="/dark"
-            ><h4>Darkmode</h4></a
+            class="nav-link active px-3 mt-3 mx-2 text-dark dark"
+            routerLink="/dark"
+            ><img
+              class="moon"
+              src="https://img.icons8.com/cotton/64/000000/moon-satellite.png"
+            />
+            Go Dark</a
           >
         </li>
       </ul>
@@ -46,11 +56,11 @@
   class="container-fluid my-2"
   style="display: flex; justify-content: center; flex-wrap: wrap; flex-basis: 1"
 >
-  <div class="myimage p-3">
-    <img class="img mypic" src="assets/dp.jpg" alt="" />
-  </div>
-  <div class="description d-flex flex-column align-items-center">
-    <div>
+  <div class="row">
+    <div class="myimage p-3 col-md-4">
+      <img class="img mypic" src="assets/dp.jpg" alt="" />
+    </div>
+    <div class="col-md-8">
       <p class="heading text-center mt-5">Hello, I'm</p>
       <svg viewBox="0 0 580 100">
         <symbol id="s-text">
@@ -66,23 +76,13 @@
           <use xlink:href="#s-text" class="text-copy"></use>
         </g>
       </svg>
-    </div>
-    <div class="d-flex flex-column">
-      <div
-        class="description d-flex px-5 mx-5"
-        style="width: 30rem; display: flex; justify-content: center"
-      >
+      <div class="abt">
         <p class="text-center">
           I am a self-taught web developer and designer. I have a passion for
           learning new technologies and building things that make a difference.
         </p>
       </div>
-      <div class="line"></div>
-
-      <div
-        class="mypower d-flex flex-row"
-        style="flex-wrap: wrap; flex-basis: 1"
-      >
+      <div class="mypower">
         <div class="designer item">
           <p class="text-center">
             <img src="https://img.icons8.com/color/48/000000/paint.png" />
@@ -105,20 +105,22 @@
         </div>
       </div>
       <div class="skills my-4">
-        <div class="skill">Angular</div>
-        <div class="skill">React</div>
-        <div class="skill">Html</div>
-        <div class="skill">CSS,SCSS</div>
-        <div class="skill">Javascript</div>
-        <div class="skill">C#</div>
-        <div class="skill">DotNET</div>
-        <div class="skill">Bootstrap</div>
-        <div class="skill">Figma</div>
-        <div class="skill">Adobe XD</div>
-        <div class="skill">SQL</div>
-        <div class="skill">NOSQL</div>
-        <div class="skill">Python</div>
-        <div class="skill">Git</div>
+        <div class="it">
+          <div class="skill">Angular</div>
+          <div class="skill">React</div>
+          <div class="skill">Html</div>
+          <div class="skill">CSS,SCSS</div>
+          <div class="skill">Javascript</div>
+          <div class="skill">C#</div>
+          <div class="skill">DotNET</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Figma</div>
+          <div class="skill">Adobe XD</div>
+          <div class="skill">SQL</div>
+          <div class="skill">NOSQL</div>
+          <div class="skill">Python</div>
+          <div class="skill">Git</div>
+        </div>
       </div>
     </div>
   </div>

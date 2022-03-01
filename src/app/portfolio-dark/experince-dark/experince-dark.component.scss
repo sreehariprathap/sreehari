@@ -1,0 +1,37 @@
+h5,
+h2,
+h4,
+p {
+  color: white;
+}
+.card {
+  border: none;
+  border-radius: 0px;
+  background: #001219;
+  box-shadow: 1px 1px 5px #023047, -1px -1px 5px #023047;
+}
+.bg {
+  //   background: white;
+}
+.br {
+  border-radius: 20px;
+}
+.experion {
+  img {
+    width: 14rem;
+    padding: 2rem;
+    margin: 3rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+  .experion {
+    img {
+      margin: 5px;
+      padding: 5px;
+    }
+  }
+}

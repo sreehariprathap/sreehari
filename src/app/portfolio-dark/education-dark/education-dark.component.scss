@@ -1,0 +1,33 @@
+.card {
+  margin: 1rem 0 1rem 0;
+  border: none;
+  border-radius: 0px;
+  // background: #ffffff;
+  background: #001219;
+
+  box-shadow: 1px 1px 5px #023047, -1px -1px 5px #023047;
+}
+.sahrdaya {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+
+  img {
+    width: 8rem;
+    padding: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sahrdaya {
+    p {
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+  }
+}
